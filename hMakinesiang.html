@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="hesap.js"></script>
+</head>
+<body>
+
+
+<div ng-controller="translateController">
+<h1> {{'language' | translate}}</h1>
+{{'num1' |translate}}: <input type="number" ng-model="carpan1">
+islem: <select ng-model="islem">
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/</option>
+		<option>**</option>
+		<option>%</option>
+		</select>
+{{'num2' |translate}}: <input type="number" ng-model="carpan2">
+<br><br><br>
+Sonuc: {{sonuc()}}
+	<div>
+		<br>
+        <button ng-click="changeLanguage('en')">English</button>
+        <button ng-click="changeLanguage('tr')">Turkce</button>
+     </div>
+</div>
+
+
+
+</body>
+</html>
