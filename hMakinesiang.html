@@ -9,19 +9,20 @@
 
 
 <div ng-controller="translateController">
-<h1> {{'language' | translate}}</h1>
-{{'num1' |translate}}: <input type="number" ng-model="carpan1">
-islem: <select ng-model="islem">
+<h1> <span style="color:grey">{{'language' | translate}}</span></h1>
+<p style="color:red">{{'num1' |translate}}: 
+<input type="number" ng-model="carpan1"></p>
+<p> {{'calc' |translate}}: <select ng-model="islem">
 		<option>+</option>
 		<option>-</option>
 		<option>*</option>
 		<option>/</option>
 		<option>**</option>
 		<option>%</option>
-		</select>
-{{'num2' |translate}}: <input type="number" ng-model="carpan2">
-<br><br><br>
-{{'res' |translate}}: {{sonuc()}}
+		</select><p>
+<p style="color:red">{{'num2' |translate}}: <input type="number" ng-model="carpan2"></p>
+<br>
+<p style="color:green">{{'res' |translate}}: {{sonuc()}}</p>
 	<div>
 		<br>
         <button ng-click="changeLanguage('en')">English</button>

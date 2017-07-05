@@ -4,6 +4,7 @@ app.config(["$translateProvider",function($translateProvider){
   var en_translations = {
     "language" : "Calculator",
     "num1" : "number 1",
+	"calc" : "calculate",
 	"num2" : "number 2",
 	"res" : "Result"
   }
@@ -11,6 +12,7 @@ app.config(["$translateProvider",function($translateProvider){
   var tr_translations = {
     "language" : "Hesap makinesi",
     "num1" : "carpan 1",
+	"calc" : "hesapla",
 	"num2" : "carpan 2",
 	"res" : "Sonuc"
   }
