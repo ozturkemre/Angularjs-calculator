@@ -4,13 +4,15 @@ app.config(["$translateProvider",function($translateProvider){
   var en_translations = {
     "language" : "Calculator",
     "num1" : "number 1",
-	"num2" : "number 2"
+	"num2" : "number 2",
+	"res" : "Result"
   }
   
   var tr_translations = {
     "language" : "Hesap makinesi",
     "num1" : "carpan 1",
-	"num2" : "carpan 2"
+	"num2" : "carpan 2",
+	"res" : "Sonuc"
   }
   
   $translateProvider.translations('en',en_translations);
