@@ -1,1 +1,1 @@
-# Angularjs-calculator
+# Angularjs-calculator with multilanguage support
