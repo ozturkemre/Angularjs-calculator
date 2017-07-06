@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-translate/angular-translate.js"></script>
-<script src="hesap.js"></script>
-</head>
-<body>
-
-
-<div ng-controller="translateController">
-<h1> <span style="color:grey">{{'language' | translate}}</span></h1>
-<p style="color:red">{{'num1' |translate}}: 
-<input type="number" ng-model="carpan1"></p>
-<p> {{'calc' |translate}}: <select ng-model="islem">
-		<option>+</option>
-		<option>-</option>
-		<option>*</option>
-		<option>/</option>
-		<option>**</option>
-		<option>%</option>
-		</select><p>
-<p style="color:red">{{'num2' |translate}}: <input type="number" ng-model="carpan2"></p>
-<br>
-<p style="color:green">{{'res' |translate}}: {{sonuc()}}</p>
-	<div>
-		<br>
-        <button ng-click="changeLanguage('en')">English</button>
-        <button ng-click="changeLanguage('tr')">Turkce</button>
-     </div>
-</div>
+	<head>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-translate/angular-translate.js"></script>
+		<script src="hesap.js"></script>
+	</head>
+	<body>
+		<div ng-controller="translateController">
+			<h1> <span translate style="color:grey">language</span></h1>
+			<span translate style="color:red">{{"num1"}}:</span>
+			<input type="number" ng-model="carpan1"><br><br>
+			<span translate>{{"calc"}}:</span><select ng-model="islem">
+					<option>+</option>
+					<option>-</option>
+					<option>*</option>
+					<option>/</option>
+					<option>**</option>
+					<option>%</option>
+					</select><br><br>
+			<span translate style="color:red">{{"num2"}}:</span> <input type="number" ng-model="carpan2">
+			<br><br>
+			<span translate style="color:green">{{"res"}}------></span> {{sonuc()}}
+				<div>
+					<br>
+					<button ng-click="changeLanguage('en')">English</button>
+					<button ng-click="changeLanguage('tr')">Turkce</button>
+				 </div>
+		</div>
 
 
 
-</body>
+	</body>
 </html>
