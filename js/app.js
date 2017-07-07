@@ -11,7 +11,7 @@ app.config(["$translateProvider",function($translateProvider){
   
   var tr_translations = {
     language : "Hesap makinesi",
-    num1 : "carpan 1",
+    num1 : "carpan 1:",
 	calc : "hesapla",
 	num2 : "carpan 2",
 	res : "Sonuc"
