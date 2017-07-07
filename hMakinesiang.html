@@ -3,14 +3,16 @@
 	<head>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-translate/angular-translate.js"></script>
-		<script src="hesap.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers/MainController.js"></script>
+		
 	</head>
 	<body>
-		<div ng-controller="translateController">
+		<div ng-controller="MainController">
 			<h1> <span translate style="color:grey">language</span></h1>
-			<span translate style="color:red">{{"num1"}}:</span>
+			<span translate style="color:red">num1</span>
 			<input type="number" ng-model="carpan1"><br><br>
-			<span translate>{{"calc"}}:</span><select ng-model="islem">
+			<span translate>calc</span><select ng-model="islem">
 					<option>+</option>
 					<option>-</option>
 					<option>*</option>
@@ -18,9 +20,9 @@
 					<option>**</option>
 					<option>%</option>
 					</select><br><br>
-			<span translate style="color:red">{{"num2"}}:</span> <input type="number" ng-model="carpan2">
+			<span translate style="color:red">num2</span> <input type="number" ng-model="carpan2">
 			<br><br>
-			<span translate style="color:green">{{"res"}}------></span> {{sonuc()}}
+			<span translate style="color:green">res</span> {{sonuc()}}
 				<div>
 					<br>
 					<button ng-click="changeLanguage('en')">English</button>
